@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body{
+            background-color: rgba(240, 243, 241, 0.768);
+        }
+        .okno{
+            border-radius: 5px;
+            background-color: white;
+            width: 350px;
+            height: 500px;
+            margin:auto;
+            margin-top:100px;
+            border: 1px solid rgb(226, 226, 226);
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        }
+        .input_password{
+            border-radius: 7px;
+            font-size: 17px;
+            width: 300px;
+            border: 1px solid #dddfe2;
+            height: 45px;
+            line-height: 45px;
+            margin-left:20px;
+            margin-top: 15px;
+        }
+        .input_email{
+            border-radius: 7px;
+            font-size: 17px;
+            width: 300px;
+            border: 1px solid #dddfe2;
+            height: 45px;
+            line-height: 16px;
+            color: gray;
+            margin-left:20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="okno">
+        <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:30px; margin-left: 128px;">Sign in</p>
+        <input type="email" class="input_email" placeholder="Email or mobile number">
+        <input type="password" class="input_password" placeholder="Password">
+    </div>
+    <!-- <h1>Home Page</h1>
+    <p>Username: {{ .Name }}</p>
+    <p>Balans: {{ .Balans }} $</p>
+    <h2>List of Books </h2>
+    <ul>
+        {{  range .Listofbooks }}
+        <li><b> {{ . }} </b></li>
+        {{ end }}
+    </ul> -->
+
+</body>
+</html>
