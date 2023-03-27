@@ -1,0 +1,15 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <h1>Login</h1>
+    <form method="post" action="/user/login" novalidate>
+        <label for="email">Email:</label>
+        <input id="email" autocomplete="off" type='email'
+               name='email' value="" required>
+        <label for="password">Password:</label>
+        <input id="password" autocomplete="off" type='password'
+               name='password' value="" required>
+        <input type="submit" value="Submit">
+    </form>
+
+{{end}}

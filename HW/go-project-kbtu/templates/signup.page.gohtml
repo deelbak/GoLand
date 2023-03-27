@@ -1,0 +1,24 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <h1>SignUp</h1>
+    <form method="post" action="/user/signup" novalidate>
+        <label for="firstname">First Name:</label>
+        <input id="firstname" autocomplete="off" type='text'
+               name='firstname' required>
+        <label for="lastname">Last Name:</label>
+        <input id="lastname" autocomplete="off" type='text'
+               name='lastname' required>
+        <label for="email">Email:</label>
+        <input id="email" autocomplete="off" type='email'
+               name='email' value="" required>
+        <label for="password">Password:</label>
+        <input id="password" autocomplete="off" type='password'
+               name='password' value="" required>
+        <label for="role">Role:</label>
+        <input id="role" autocomplete="off" type='text'
+               name='role' required>
+        <input type="submit" value="Submit">
+    </form>
+
+{{end}}

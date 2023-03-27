@@ -1,0 +1,35 @@
+{{template "base" .}}
+
+{{define "content"}}
+    <div>
+        {{$res := index .Data "item"}}
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Category</th>
+            </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>{{$res.ID}}</td>
+                    <td>{{$res.Name}}</td>
+                    <td>{{$res.Price}}</td>
+                    <td>{{$res.Rating}}</td>
+                    <td>{{$res.Category}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form method="post" action="/items/filter/{{$res.ID}}" novalidate>
+        <label for="rate">Rate:</label>
+        <input id="rate" autocomplete="off" type='text'
+               name='rate' required>
+        <input type="submit" value="Save">
+    </form>
+    <a href="/items/filter" aria-disabled="true" tabindex="-1">Go Back</a>
+{{end}}
