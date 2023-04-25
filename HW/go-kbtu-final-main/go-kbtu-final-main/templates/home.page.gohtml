@@ -1,0 +1,12 @@
+{{template  "base" .}}
+
+{{define "content"}}
+
+    <a href="/signup">Sign Up</a>
+    {{if eq .IsAuthenticated 1}}
+        <a href="/logout">Logout</a>
+    {{else}}
+        <a href="/login">Login</a>
+    {{end}}
+    <a href="/items/filter">Items</a>
+{{end}}
