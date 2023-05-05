@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items by filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>itemColumn1</th>
+                <th>itemColumn2</th>
+                <th>itemColumn3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="/item.html"> exampleItem</a></td>
+                <td><a href="/item.html"> exampleItem</a></td>
+                <td><a href="/item.html"> exampleItem</a></td>
+            </tr>
+            <tr>
+                <td><a href="/item.html"> exampleItem</a></td>
+                <td><a href="/item.html"> exampleItem</a></td>
+                <td><a href="/item.html"> exampleItem</a></td>
+            </tr>
+            <tr>
+                <td><a href="/item.html"> exampleItem</a></td>
+                <td><a href="/item.html"> exampleItem</a></td>
+                <td><a href="/item.html"> exampleItem</a></td>
+            </tr>
+        </tbody>    
+    </table>
+    <div class="filter">
+        <h2>Filter by:</h2>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="text" >
+            <label>Name</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="number" >
+            <label>Rating</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="number" >
+            <label>Price</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <input type="radio" name="sorting" value="desc">
+                <label for="rating1">desc</label>
+               
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+               
+                <input type="radio" name="sorting" value="asc">
+                <label for="rating2">asc</label>
+               
+        </div>
+        
+        <button class="btn">Find</button>
+        <a style="padding: 0 75px; margin-top: 20px;" href="/index.html">Go back</a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
